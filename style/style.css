@@ -1,0 +1,76 @@
+@font-face {
+    font-family: Vazir-Bold;
+    src: url(./../font/Vazir-Bold-FD-WOL.woff);
+}
+
+@font-face {
+    font-family: Vazir-Light;
+    src: url(./../font/Vazir-Light-FD-WOL.woff);
+}
+
+@font-face {
+    font-family: Vazir-Medium;
+    src: url(./../font/Vazir-Medium-FD-WOL.woff);
+}
+
+@font-face {
+    font-family: Vazir-Regular;
+    src: url(./../font/Vazir-Regular-FD-WOL.woff);
+}
+
+* ,
+*::after ,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    font-family: Vazir-Regular;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: #fff;
+    height: 74px;
+    box-shadow: 0px 0.5px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.header-box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 40px;
+}
+
+.header-logo img {
+    width: 70px;
+    height: 39px;
+}
+
+.header-item :nth-child(1) {
+    padding-left: 20px;
+}
+
+.header-item a {
+    font-family: Vazir;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.header-item :nth-child(1) {
+    color: rgba(55, 71, 79, 1);
+}
+
+.header-item :nth-child(2) {
+    color: rgba(0, 191, 165, 1);
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Address registration</title>
+        <link rel="icon" href="image/logo.png">
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <link rel="stylesheet" href="style/Address_registration/app.css">
+        <link rel="stylesheet" href="style/loading.css">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+
+        <header class="header">
+            <div class="header-box">
+                <div class="header-logo">
+                    <img src="image/logo.png" alt="image logo">
+                </div>
+                <div class="header-item">
+                    <a href="./Address_registration.html">
+                        ثبت آدرس
+                    </a>
+                    <a href="./Show_address.html">
+                        مشاهده آدرس ها
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="box-content">
+
+            <div class="container">
+                <h2>صفحه ثبت آدرس</h2>
+            </div>
+
+            <!-- بخش اول: فرم ورود اطلاعات -->
+            <div class="form-section">
+                <form id="address-form">
+
+                    <div class="container address-box">
+                        <div class="row">
+
+                            <div class="col-lg-4 col-md-12 pb-3">
+                                <label for="first-name">نام</label>
+                                <input type="text" id="first-name"
+                                    name="first-name"
+                                    required minlength="3">
+                            </div>
+
+                            <div class="col-lg-4 col-md-12 pb-3">
+                                <label for="last-name">نام خانوادگی</label>
+                                <input type="text" id="last-name"
+                                    name="last-name"
+                                    required minlength="3">
+                            </div>
+
+                            <div class="col-lg-4 col-md-12 pb-3">
+                                <label for="mobile">تلفن همراه</label>
+                                <input type="tel" id="mobile" name="mobile"
+                                    required
+                                    pattern="[0-9]{11}">
+                            </div>
+
+                            <div class="col-lg-4 col-md-12 pb-3">
+                                <label for="phone">تلفن ثابت (اختیاری)</label>
+                                <input type="tel" id="phone" name="phone"
+                                    pattern="[0-9]{11}">
+                            </div>
+
+                            <div class="col-lg-8 col-md-12 pb-3">
+                                <label for="address">آدرس</label>
+                                <input id="address" name="address" required
+                                    minlength="10">
+                            </div>
+
+                            <div class="col-lg-4 col-md-12 pb-2">
+                                <label for="gender">جنسیت</label>
+                                <select id="gender" name="gender" required>
+                                    <option value="male">آقا</option>
+                                    <option value="female">خانم</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn">
+                        <button type="button" id="next-btn">ثبت و ادامه</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- بخش دوم: نقشه -->
+        <div class="map-section hidden">
+            <div id="map"></div>
+            <div class="btn">
+                <button type="button" id="submit-btn">ثبت نهایی</button>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script src="bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="script/Address_registration/app.js"></script>
+    </body>
+</html>

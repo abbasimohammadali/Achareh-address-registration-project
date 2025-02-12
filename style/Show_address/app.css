@@ -1,0 +1,48 @@
+.container {
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.specifications h2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(55, 71, 79, 1);
+}
+
+.address-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px 20px 5px; 
+    margin: 10px 0 20px;
+}
+
+.address-item {
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(237, 240, 242, 1);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.address-item div :nth-child(1) {
+    color: rgba(155, 155, 155, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.address-item div :nth-child(2) {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    color: rgba(55, 71, 79, 1);
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
